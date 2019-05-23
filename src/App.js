@@ -94,10 +94,10 @@ class App extends React.Component {
       return list;
     })
     console.log(this.state);
-    // this.setState({
-    //   allCards: [...this.state.allCards, [newCard.id]:newCard],
-    //   lists: newLists
-    // })
+    this.setState({
+      allCards: {...this.state.allCards, [newCard.id]:newCard},
+      lists: newLists
+    })
   }
   
   
